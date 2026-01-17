@@ -105,10 +105,11 @@ def main():
 
                 user_data = data.get('data', {})
 
-                print(f"\n{Colors.YELLOW}🔑 Token:{Colors.END}")
+                print(f"\n{Colors.YELLOW}🔑 Token (copy below):{Colors.END}")
+                print(f"{Colors.BOLD}{'─'*40}{Colors.END}")
                 token = user_data.get('token', 'N/A')
-                print(f"   {token[:60]}...")
-                print(f"   {token[60:]}")
+                print(token)
+                print(f"{Colors.BOLD}{'─'*40}{Colors.END}")
 
                 print(
                     f"\n{Colors.CYAN}📞 Phone:{Colors.END} {user_data.get('phone', 'N/A')}"
